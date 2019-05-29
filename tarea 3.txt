@@ -1,0 +1,313 @@
+/*
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+	
+	int r;
+	int n;
+	int i;
+	int s;
+	
+	printf("leer n");
+	scanf("%d", &n);
+	
+    for(i = 1;i <= n;i++){
+	
+		if (i%2 == 0){
+		r = i-1;
+    	printf("imprime n %d\n",r);
+	}		
+		else{
+		s = i+1;
+		printf("imprime n %d\n",s);	
+	}	
+}
+	return 0;
+}
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+	int x,y,suma,result,ux,dx,uy,dy,sumau,sumad;
+	
+	printf("Digite el primer numero de dos digitos: "); scanf("%d",&x);
+	printf("Digite el segundo numero de dos digitos: "); scanf("%d",&y);
+	
+	dx = x / 10;
+	ux = x - (dx * 10);
+	dy = y / 10;
+	uy = y - (dy * 10);
+	
+	sumad = dx+dy;
+	sumau = ux+uy;
+	
+	if(sumau>=10){
+		sumad+=1;
+		 if(sumad>=10){
+		 	printf("\nNumero de acarreos en la suma es: 2");
+		}
+		else{
+			printf("\nNumero de acarreos en la suma es: 1");
+		}
+	}
+	
+	if(sumau<10 && sumad<10){
+		printf("\nNumero de acarreos en la suma es: 0");
+	}
+	return 0;
+}
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	
+	int x,y,suma,result,ux,dx,uy,dy,sumau,sumad;
+	
+	printf("Digite el primer numero de dos digitos: "); 
+	scanf("%d",&x);
+	
+	printf("Digite el segundo numero de dos digitos: ");
+	scanf("%d",&y);
+	
+	printf("\nMostrar el resultado de la suma?\nSI = 1\t NO = 0\n");
+	scanf("%d",&result);
+	
+	dx = x / 10;
+	ux = x - (dx * 10);
+	dy = y / 10;
+	uy = y - (dy * 10);
+	
+	sumad = dx+dy;
+	sumau = ux+uy;
+	
+	if(sumau>=10){
+		sumad+=1;
+		 if(sumad>=10){
+		 	printf("\nNumero de acarreos en la suma es: 2");
+		}
+		else{
+			printf("\nNumero de acarreos en la suma es: 1");
+		}
+	}
+	
+	if(sumau<10 && sumad<10){
+		printf("\nNumero de acarreos en la suma es: 0");
+	}
+	
+	suma=x+y;
+	
+	switch(result){
+		case 1: printf("\n\nLa suma es: %d",suma);
+		break;
+		case 0: printf("\nHa decidido no mostrar el resultado de la suma");
+		break;
+		default: printf ("\nNO HA DIGITADO UN NUMERO CORRECTO");	
+	}	
+	
+	return 0;
+}
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+#include <stdio.h>
+#include <iostream>
+
+int main(int argc, char** argv) {
+	
+	int a = 0,b = 0,c = 0,r = 0,s = 0,t = 0,x = 0;
+	
+		printf("primer_valor:");
+		
+		scanf("%d", &a);
+		
+		printf("segundo_valor:");
+		
+		scanf("%d", &b);
+		
+		printf("tercer_valor:");
+		
+		scanf("%d", &c);
+		
+		r = a - b;
+		s = b - c;
+		t = a - c;
+		x = r - s - t;
+		
+	if (r == 0 && x != 0){
+		printf("es isosceles");
+}
+	if(s == 0 && x != 0){
+		printf("es isosceles");
+}
+	if(t == 0 && x != 0){
+		printf("es isosceles");
+}
+	if(r == 0 && s == 0 && t == 0 && x == 0){
+		printf("es equilatero");
+}
+	if(r != 0 && s != 0 && t != 0 && x != 0){
+		printf("es escaleno");
+}
+	return 0;
+}
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+#include <stdio.h>
+#include <iostream>
+
+int main(int argc, char** argv) { 
+
+int a = 0,b = 0,c = 0,r = 0,s = 0,t = 0,x = 0;
+	
+		printf("primer_valor:");
+		
+		scanf("%d", &a);
+		
+		printf("segundo_valor:");
+		
+		scanf("%d", &b);
+		
+		printf("tercer_valor:");
+		
+		scanf("%d", &c);
+		
+		r = a - b;
+		s = b - c;
+		t = a - c;
+		x = r - s - t;
+		
+		
+	if (a > b && a < c || a > c && a < b){
+		printf("el segundo valor mas alto es el:%d",a);
+}
+
+	if (b > a && b < c || b > c && b < a){
+		printf("el segundo valor mas alto es el:%d",b);
+}		
+	if (c > a && c < b || c > b && c < a){
+		printf("el segundo valor mas alto es el:%d",b);
+}
+		
+	if (r == 0 && x != 0){
+		printf("2 son iguales");
+}
+	if(s == 0 && x != 0){
+		printf("2 son iguales");
+}
+	if(t == 0 && x != 0){
+		printf("2 son iguales");
+}
+	if(r == 0 && s == 0 && t == 0 && x == 0){
+		printf("los 3 son iguales");
+}
+
+return 0;
+
+}
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+#include <stdio.h>
+#include <iostream>
+
+int main(int argc, char** argv) {
+	
+	float a = 0,b = 0,c = 0,r = 0,s = 0,t = 0,x = 0;
+	
+		printf("primer_valor:");
+		
+		scanf("%f", &a);
+		
+		printf("segundo_valor:");
+		
+		scanf("%f", &b);
+		
+		printf("tercer_valor:");
+		
+		scanf("%f", &c);
+		
+		r = a - b;
+		s = b - c;
+		t = a - c;
+		x = r - s - t;
+		
+	if (r == 0 && x != 0){
+		printf("es isosceles");
+}
+	if(s == 0 && x != 0){
+		printf("es isosceles");
+}
+	if(t == 0 && x != 0){
+		printf("es isosceles");
+}
+	if(r == 0 && s == 0 && t == 0 && x == 0){
+		printf("es equilatero");
+}
+	if(r != 0 && s != 0 && t != 0 && x != 0){
+		printf("es escaleno");
+}
+	return 0;
+}
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+#include <stdio.h>
+#include <iostream>
+#include <math.h>
+
+int main(int argc, char** argv) {
+	
+	float a = 0,b = 0,c = 0,d = 0,r = 0,s = 0,t = 0,x = 0;
+	
+		printf("base:");
+		
+		scanf("%f", &a);
+		
+		printf("altura:");
+		
+		scanf("%f", &b);
+		
+		printf("diametro de la circunferencia:");
+		
+		scanf("%f", &d);
+		
+		t = a*a;
+		x = b*b;
+		s = t+x;
+		c = sqrt(s);
+		r = d/2;
+
+	if(c <= r){
+		
+		printf("si cabe ");
+	}
+	else{
+		
+		printf("no cabe ");
+		
+	}
+	return 0;
+}
+
+*/
